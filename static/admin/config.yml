@@ -35,3 +35,20 @@ collections:
       - name: body
         label: Body
         widget: markdown
+  - name: data
+    label: Data
+    files:
+      - name: author
+        label: Authors
+        file: 'src/data/author.json'
+        fields:
+          - name: author
+            label: Author
+            widget: list
+            fields:
+              - name: id
+                label: Name
+                widget: string
+              - name: twitter
+                label: Twitter
+                widget: string
