@@ -18,6 +18,12 @@ body,
   min-height: 100vh;
 }
 
+::selection {
+  color: black;
+  /* it gets semi-transparent with full color */
+  background-color: rgba(0, 0, 0, 0.99);
+}
+
 a {
   color: #5f6f7c;
   transition: background-color ease 0.25s;
