@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
     description: '',
-    siteUrl: '',
+    siteUrl: 'https://www.paralelnapoliskosice.sk',
     email: 'info@ppke.sk',
     social: {
       facebook: 'https://www.facebook.com/paralelnapoliske',
@@ -67,6 +67,19 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1200,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-social-cards',
+            options: {
+              meta: {
+                parts: [
+                  '—',
+                  { field: 'author' },
+                  ', ',
+                  { field: 'date', format: 'DD. MMMM YYYY' },
+                ],
+              },
             },
           },
         ],

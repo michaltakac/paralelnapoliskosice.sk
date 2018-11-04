@@ -19,6 +19,7 @@ export const Layout = ({ children, showNewsletter }) => (
         site {
           siteMetadata {
             title
+            siteUrl
           }
         }
       }
@@ -54,6 +55,13 @@ export const Layout = ({ children, showNewsletter }) => (
             />
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fff" />
             <meta name="msapplication-TileColor" content="#ffffff" />
+            {/* <meta name="twitter:card" content="summary_large_image" /> */}
+            {/* <meta
+              name="twitter:image"
+              content={`${
+                data.site.siteMetadata.siteUrl
+              }${slug}twitter-card.jpg`}
+            /> */}
           </Helmet>
 
           <Header />
